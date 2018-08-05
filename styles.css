@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+}
+
+body{
+	background: #5a4d47 url(bg.jpg) top center / cover no-repeat;
+	font-family: 'Raleway', sans-serif;
+}
+
+img.logo{
+	width: 350px;
+	margin: 50px;
+}
+
+header p{
+	font-size: 2.3em;
+	color: #fff;
+}
+div.brands > div{
+	padding: 40px;
+	position: relative;
+}
+
+div.brands > div > div{
+	margin: 20px;
+}
+div.brands > div > div:after{
+	content: " ";
+	width: 90%;
+	height: 90%;
+	background: silver;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	z-index: 1;
+}
+div.brands > .first div:after{
+	background: #e28329;
+	-webkit-clip-path: polygon(0 9%, 100% 5%, 100% 100%, 0 91%);
+	clip-path: polygon(0 9%, 100% 5%, 100% 100%, 0 91%);
+}
+div.brands > .second div:after{
+	background: #dc9950;
+	-webkit-clip-path: polygon(0 7%, 100% 17%, 100% 89%, 0 100%);
+	clip-path: polygon(0 7%, 100% 17%, 100% 89%, 0 100%);
+}
+div.brands > .third div:after{
+	background: #ffd962;
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 92%, 0 100%);
+	clip-path: polygon(0 0, 100% 7%, 100% 92%, 0 100%);
+}
+div.brands > .fourth div:after{
+	background: #c2ff8f;
+	-webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 83%);
+	clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 83%);
+}
+div.brands > div img{
+	position: relative;
+	z-index: 10;
+	width: 100%;
+}
+@media (max-width: 650px){
+	img.logo{
+		width: 200px;
+	}
+}
